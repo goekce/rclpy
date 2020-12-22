@@ -162,7 +162,7 @@ ament_target_dependencies(rclpy_signal_handler
 
 # Pycapsule handling library
 pybind11_add_module(_rclpy_pycapsule SHARED
-  src/rclpy/_rclpy_pycapsule.c
+  src/rclpy/_rclpy_pycapsule.cpp
 )
 # Install into test_rclpy folder in build space for unit tests to import
 set_target_properties(_rclpy_pycapsule PROPERTIES
